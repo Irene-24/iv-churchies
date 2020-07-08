@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import Flexbox from "../Flexbox";
 import FooterList from "./FooterList";
 import classes from "./Footer.module.css";
@@ -88,6 +89,17 @@ function Footer ()
                     footerLinks.map( section => <FooterList key={ section.header } header={ section.header } links={ section.links } /> )
 
                 }
+
+                <section className={ classes.Social }>
+
+                    <Flexbox>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </Flexbox>
+
+                    <Link>Terms and Conditions</Link>
+                </section>
 
             </Flexbox>
 

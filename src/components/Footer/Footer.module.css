@@ -17,13 +17,34 @@
     width: 94vw;
 }
 
+.Social
+{
+    padding-top: 50px;
+}
+
+.Social a
+{
+    font-size: 1.02rem;
+    color:#fff;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.Social span
+{
+    background: #fff;
+    width:35px;
+    height: 35px;
+    margin: 10px;
+}
+
 .CopyRight
 {
     text-align: center;
     color:#fff;
     font-family: Muli;
     font-size: 1.1rem;
-    padding: 20px 90px;
+    padding: 20px 78px;
     letter-spacing: 0.3em;
 }
 
