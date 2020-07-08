@@ -40,12 +40,13 @@ function NavBar ()
 
     const toggleNav = () =>
     {
-
-        setShowNav( !showNav );
-
+        if ( window.innerWidth < 768 )
+        {
+            setShowNav( !showNav );
+        }
     };
 
-    //remove backdrop on
+    //remove backdrop on resize to large screens
     useEffect( () =>
     {
         const resizeHandler = () =>
@@ -75,9 +76,10 @@ function NavBar ()
 
     return (
         <>
+            <Nav onClick={ toggleNav } as="nav" className={ classes.NavBar } justify="space-between">
 
-            <Backdrop toggle={ toggleNav } show={ showNav } />
-            <Nav as="nav" className={ classes.NavBar } justify="space-between">
+
+                <Backdrop z="12" toggle={ toggleNav } show={ showNav } />
 
                 <NavLink className={ classes.Logo } to="/">iV-churchies</NavLink>
 

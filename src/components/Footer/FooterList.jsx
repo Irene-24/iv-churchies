@@ -13,7 +13,10 @@ const Anchors = styled( Link )`
 const Header = styled.p`
     font-size:1.1rem;
     font-weight:500;
-    color:#fff
+    color:#fff;
+    margin: 16px 0;
+    font-family: "Roboto";
+    font-weight:500
 
 `;
 
@@ -22,7 +25,7 @@ function FooterList ( { header, links } )
 {
 
     return (
-        <section style={ { padding: "20px" } } >
+        <section >
             <Header>{ header.toUpperCase() }</Header>
 
             <ul>
