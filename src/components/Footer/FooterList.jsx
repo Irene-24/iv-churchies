@@ -11,8 +11,8 @@ const Anchors = styled( Link )`
     `;
 
 const Header = styled.p`
-    font-size:1.2rem;
-    font-weight:bold;
+    font-size:1.1rem;
+    font-weight:500;
     color:#fff
 
 `;

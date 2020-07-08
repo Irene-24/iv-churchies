@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookSquare, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import Flexbox from "../Flexbox";
 import FooterList from "./FooterList";
 import classes from "./Footer.module.css";
@@ -83,7 +85,7 @@ function Footer ()
             <h3>iV-churchies</h3>
             <div className={ classes.Line }></div>
 
-            <Flexbox as="nav" justify="space-evenly">
+            <Flexbox as="nav" justify="space-between">
                 {
 
                     footerLinks.map( section => <FooterList key={ section.header } header={ section.header } links={ section.links } /> )
@@ -93,12 +95,26 @@ function Footer ()
                 <section className={ classes.Social }>
 
                     <Flexbox>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <span>
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                                <FontAwesomeIcon icon={ faFacebookSquare } />
+                            </a>
+
+                        </span>
+                        <span>
+                            <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+                                <FontAwesomeIcon icon={ faTwitter } />
+                            </a>
+
+                        </span>
+                        <span>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                                <FontAwesomeIcon icon={ faInstagram } />
+                            </a>
+                        </span>
                     </Flexbox>
 
-                    <Link>Terms and Conditions</Link>
+                    <Link to="/">Terms and Conditions</Link>
                 </section>
 
             </Flexbox>
