@@ -1,25 +1,25 @@
 import styled from 'styled-components';
-import { orange } from "../colors";
-
 const LinedHeader = styled.p`
     font-family: Quicksand;
     font-style: normal;
     text-align: center;
-    color: #000000;
+    color: #000;
     position:relative;
     padding: 5px 5px 10px;
     display:inline-block;
+    text-transform:uppercase;
+    font-size:1.5rem;
 
     &:after
     {
         content:"";
         position:absolute;
-        width:${props => props.mini ? "70%" : "90%" };
+        width:${props => props.mini ? "45%" : "90%" };
         height:2px;
-        background-color:${orange };
-        left:${props => props.mini ? "50%" : "0" };
+        background-color:var(--orange);
+        left:${props => props.mini ? "0" : "50%" };
         bottom:5px;
-        transform: ${props => props.mini ? "translateX( -50%)" : "0" }
+        transform: ${props => props.mini ? "0" : "translateX( -50%)" }
 
     }
 `;

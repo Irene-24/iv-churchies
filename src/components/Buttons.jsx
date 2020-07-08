@@ -1,10 +1,9 @@
 import styled from 'styled-components';
-import { orange, lightOrange } from "../colors";
 
 const Button = styled.button`
     cursor:pointer;
     color:#fff;
-    background:${props => props.light ? lightOrange : orange };  
+    background:${props => props.light ? "var(--lightOrange)" : "var(--orange)" };  
     border:none;
     outline:none;
     padding: 10px;
@@ -15,7 +14,7 @@ const Button = styled.button`
 
     &:hover 
     {
-        transform: scale(1.1);    
+        transform: scale(1.05);    
     }
 
 `;

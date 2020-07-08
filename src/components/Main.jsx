@@ -1,16 +1,15 @@
 import styled from 'styled-components';
-import { grey } from "../colors";
 
 const Main = styled.main`
    
-    background:${grey };  
+    background:var(--grey);  
     min-height:50vh;
-    padding: 10px 20px;
+    padding: 20px;
     text-align:center;
 
     @media screen and (min-width:768px)
     {
-        padding: 10px 40px;
+        padding: 20px 40px;
     }
    
 
